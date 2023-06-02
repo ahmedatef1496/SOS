@@ -19,21 +19,25 @@ void Task2(void)
 
 void app_init()
 {
-	enu_sos_error_status_t app_error_check = SOS_STATUS_SUCCESS;
-	
 	GLOBALE_ENABLE();
-	sos_init();
+	
+	if (SOS_STATUS_SUCCESS != sos_init() )
+	{
+		//handle initialization fail scenario
+	}
 	
 	str_sos_config_task_t	str_task1_config	= {1,1,3,Task1};
 	str_sos_config_task_t	str_task2_config	= {2,2,5,Task2};
 	
-	app_error_check = sos_create_task(&str_task1_config);
-	app_error_check = sos_create_task(&str_task2_config);
 	
-// 	if (app_error_check != SOS_STATUS_TASK_ADDED)
-// 	{
-// 		
-// 	}
+	if (SOS_STATUS_TASK_ADDED  != sos_create_task(&str_task1_config) )
+	{
+		//handle task creation fail scenario
+	}
+	if (SOS_STATUS_TASK_ADDED  != sos_create_task(&str_task2_config) )
+	{
+		//handle task creation fail scenario
+	}
 
 
 

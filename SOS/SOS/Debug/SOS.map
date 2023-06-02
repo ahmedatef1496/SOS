@@ -1020,44 +1020,44 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x290a
+.debug_info     0x00000000     0x28f0
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x4e6 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
- .debug_info    0x000004e6      0x2fd app/app.o
- .debug_info    0x000007e3      0x2a9 HAL/button/button.o
- .debug_info    0x00000a8c      0x2ab HAL/led/led.o
- .debug_info    0x00000d37       0xb2 main.o
- .debug_info    0x00000de9      0x483 MCAL/dio/dio.o
- .debug_info    0x0000126c      0x1a2 MCAL/dio/dio_cfg.o
- .debug_info    0x0000140e      0x279 MCAL/Interrupt/exi.o
- .debug_info    0x00001687      0xb59 MCAL/timers/timer.o
- .debug_info    0x000021e0      0x72a SERVICE/sos/sos.o
+ .debug_info    0x000004e6      0x2e3 app/app.o
+ .debug_info    0x000007c9      0x2a9 HAL/button/button.o
+ .debug_info    0x00000a72      0x2ab HAL/led/led.o
+ .debug_info    0x00000d1d       0xb2 main.o
+ .debug_info    0x00000dcf      0x483 MCAL/dio/dio.o
+ .debug_info    0x00001252      0x1a2 MCAL/dio/dio_cfg.o
+ .debug_info    0x000013f4      0x279 MCAL/Interrupt/exi.o
+ .debug_info    0x0000166d      0xb59 MCAL/timers/timer.o
+ .debug_info    0x000021c6      0x72a SERVICE/sos/sos.o
 
-.debug_abbrev   0x00000000      0xf57
+.debug_abbrev   0x00000000      0xf48
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x4a3 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
- .debug_abbrev  0x000004a3      0x11b app/app.o
- .debug_abbrev  0x000005be       0xd7 HAL/button/button.o
- .debug_abbrev  0x00000695       0xce HAL/led/led.o
- .debug_abbrev  0x00000763       0x63 main.o
- .debug_abbrev  0x000007c6      0x152 MCAL/dio/dio.o
- .debug_abbrev  0x00000918       0x75 MCAL/dio/dio_cfg.o
- .debug_abbrev  0x0000098d       0xe4 MCAL/Interrupt/exi.o
- .debug_abbrev  0x00000a71      0x2af MCAL/timers/timer.o
- .debug_abbrev  0x00000d20      0x237 SERVICE/sos/sos.o
+ .debug_abbrev  0x000004a3      0x10c app/app.o
+ .debug_abbrev  0x000005af       0xd7 HAL/button/button.o
+ .debug_abbrev  0x00000686       0xce HAL/led/led.o
+ .debug_abbrev  0x00000754       0x63 main.o
+ .debug_abbrev  0x000007b7      0x152 MCAL/dio/dio.o
+ .debug_abbrev  0x00000909       0x75 MCAL/dio/dio_cfg.o
+ .debug_abbrev  0x0000097e       0xe4 MCAL/Interrupt/exi.o
+ .debug_abbrev  0x00000a62      0x2af MCAL/timers/timer.o
+ .debug_abbrev  0x00000d11      0x237 SERVICE/sos/sos.o
 
-.debug_line     0x00000000     0x17e5
+.debug_line     0x00000000     0x17ea
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x116 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
- .debug_line    0x00000116      0x14e app/app.o
- .debug_line    0x00000264       0xc0 HAL/button/button.o
- .debug_line    0x00000324       0xe4 HAL/led/led.o
- .debug_line    0x00000408       0x57 main.o
- .debug_line    0x0000045f      0x465 MCAL/dio/dio.o
- .debug_line    0x000008c4       0x3c MCAL/dio/dio_cfg.o
- .debug_line    0x00000900      0x23c MCAL/Interrupt/exi.o
- .debug_line    0x00000b3c      0x823 MCAL/timers/timer.o
- .debug_line    0x0000135f      0x486 SERVICE/sos/sos.o
+ .debug_line    0x00000116      0x153 app/app.o
+ .debug_line    0x00000269       0xc0 HAL/button/button.o
+ .debug_line    0x00000329       0xe4 HAL/led/led.o
+ .debug_line    0x0000040d       0x57 main.o
+ .debug_line    0x00000464      0x465 MCAL/dio/dio.o
+ .debug_line    0x000008c9       0x3c MCAL/dio/dio_cfg.o
+ .debug_line    0x00000905      0x23c MCAL/Interrupt/exi.o
+ .debug_line    0x00000b41      0x823 MCAL/timers/timer.o
+ .debug_line    0x00001364      0x486 SERVICE/sos/sos.o
 
 .debug_frame    0x00000000      0x8d8
  *(.debug_frame)
@@ -1070,37 +1070,37 @@ END GROUP
  .debug_frame   0x000002d8      0x514 MCAL/timers/timer.o
  .debug_frame   0x000007ec       0xec SERVICE/sos/sos.o
 
-.debug_str      0x00000000     0x1274
+.debug_str      0x00000000     0x129a
  *(.debug_str)
  .debug_str     0x00000000      0x196 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
- .debug_str     0x00000196      0x367 app/app.o
-                                0x39b (size before relaxing)
- .debug_str     0x000004fd       0xe5 HAL/button/button.o
+ .debug_str     0x00000196      0x34a app/app.o
+                                0x37e (size before relaxing)
+ .debug_str     0x000004e0      0x111 HAL/button/button.o
                                 0x318 (size before relaxing)
- .debug_str     0x000005e2       0x5f HAL/led/led.o
+ .debug_str     0x000005f1       0x5f HAL/led/led.o
                                 0x2b5 (size before relaxing)
- .debug_str     0x00000641       0x11 main.o
+ .debug_str     0x00000650       0x11 main.o
                                 0x182 (size before relaxing)
- .debug_str     0x00000652       0xd6 MCAL/dio/dio.o
+ .debug_str     0x00000661       0xd6 MCAL/dio/dio.o
                                 0x38a (size before relaxing)
- .debug_str     0x00000728       0x16 MCAL/dio/dio_cfg.o
+ .debug_str     0x00000737       0x16 MCAL/dio/dio_cfg.o
                                 0x28a (size before relaxing)
- .debug_str     0x0000073e      0x11e MCAL/Interrupt/exi.o
+ .debug_str     0x0000074d      0x11e MCAL/Interrupt/exi.o
                                 0x28b (size before relaxing)
- .debug_str     0x0000085c      0x918 MCAL/timers/timer.o
+ .debug_str     0x0000086b      0x918 MCAL/timers/timer.o
                                 0xa9a (size before relaxing)
- .debug_str     0x00001174      0x100 SERVICE/sos/sos.o
+ .debug_str     0x00001183      0x117 SERVICE/sos/sos.o
                                 0x616 (size before relaxing)
 
-.debug_loc      0x00000000     0x1f86
+.debug_loc      0x00000000     0x1f72
  *(.debug_loc)
- .debug_loc     0x00000000       0x5b app/app.o
- .debug_loc     0x0000005b       0xe8 HAL/button/button.o
- .debug_loc     0x00000143      0x10b HAL/led/led.o
- .debug_loc     0x0000024e      0x976 MCAL/dio/dio.o
- .debug_loc     0x00000bc4      0x422 MCAL/Interrupt/exi.o
- .debug_loc     0x00000fe6      0xc26 MCAL/timers/timer.o
- .debug_loc     0x00001c0c      0x37a SERVICE/sos/sos.o
+ .debug_loc     0x00000000       0x47 app/app.o
+ .debug_loc     0x00000047       0xe8 HAL/button/button.o
+ .debug_loc     0x0000012f      0x10b HAL/led/led.o
+ .debug_loc     0x0000023a      0x976 MCAL/dio/dio.o
+ .debug_loc     0x00000bb0      0x422 MCAL/Interrupt/exi.o
+ .debug_loc     0x00000fd2      0xc26 MCAL/timers/timer.o
+ .debug_loc     0x00001bf8      0x37a SERVICE/sos/sos.o
 
 .debug_macinfo
  *(.debug_macinfo)
