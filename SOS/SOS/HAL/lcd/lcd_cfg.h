@@ -2,7 +2,7 @@
  * LCD_Cfg.h
  *
  * Created: 4/1/2023 4:11:09 PM
- *  Author: atef
+ *  Author: Amr
  */ 
 
 

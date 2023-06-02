@@ -2,12 +2,12 @@
  * CFile1.c
  *
  * Created: 4/1/2023 3:51:57 PM
- *  Author: atef
+ *  Author: Amr
  */
 #define  F_CPU  16000000
 #include <util/delay.h>
 
-#include "LCD_Cfg.h"
+
 #include "lcd.h"
 
 #if LCD_MODE==_8_BIT

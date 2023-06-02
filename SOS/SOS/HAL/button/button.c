@@ -2,7 +2,7 @@
  * button.c
  *
  * Created: 4/14/2023 8:18:20 AM
- *  Author: atef
+ *  Author: Amr
  */ 
  #include "button.h"
 en_buttonError_t BUTTON_init( DIO_Pin_type button)
@@ -38,19 +38,4 @@ en_buttonError_t BUTTON_read(DIO_Pin_type button , DIO_PinVoltage_type *buttonSt
 	
 	return error;
 } 
-enuButtonStatus_t BUTTON_Check(DIO_Pin_type button , DIO_PinVoltage_type *buttonState)
-{
-     BUTTON_read(button,buttonState);
-	 	
-if (*buttonState==LOW)
-{
 
-	while(*buttonState==LOW)
-	{
-		BUTTON_read(button,buttonState);
-	}
-	
-}
-return PRESSED;
-
-}

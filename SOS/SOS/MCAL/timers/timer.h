@@ -2,7 +2,7 @@
  * timer.h
  *
  * Created: 5/12/2023 3:36:24 PM
- *  Author: atef
+ *  Author: Amr
  */ 
 
 
@@ -115,12 +115,12 @@ void TIMER0_Init(Timer0Mode_type mode);
 void timer_InitValue(u8 timerInitValue);
 EN_timerError_t timer_start(Timer0Scaler_type scaler);
 void timer_reset();
+void timer_stop();
 void TIMER0_OV_InterruptEnable(void);
 void TIMER0_OV_InterruptDisable(void);
 void TIMER0_OV_SetCallBack(void(*LocalFptr)(void));
 u32 set_time (u16 PRE_SCALER,f64 DesiedTime);
 void timer_delay(u16 Delay);
-void timer0_stop();
 /////////////////////////////////////////////////////////////////
 typedef enum{
 	TIMER1_STOP=0,

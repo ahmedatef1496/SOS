@@ -10,7 +10,9 @@ os/os.d os/os.o: ../os/os.c ../os/os.h ../os/../MCAL/dio/dio.h \
  ../os/../MCAL/dio/../../SERVIES/std_typs.h ../os/../MCAL/timers/timer.h \
  ../os/../MCAL/timers/../dio/dio.h ../os/os_cfg.h \
  ../os/../MCAL/Interrupt/exi.h ../os/../MCAL/Interrupt/../dio/dio.h \
- ../os/../HAL/button/button.h ../os/../HAL/button/../../MCAL/dio/dio.h
+ ../os/../HAL/button/button.h ../os/../HAL/button/../../MCAL/dio/dio.h \
+ ../os/../HAL/lcd/lcd.h ../os/../HAL/lcd/../../MCAL/dio/dio.h \
+ ../os/../HAL/lcd/LCD_Cfg.h
 
 ../os/os.h:
 
@@ -47,3 +49,9 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 ../os/../HAL/button/button.h:
 
 ../os/../HAL/button/../../MCAL/dio/dio.h:
+
+../os/../HAL/lcd/lcd.h:
+
+../os/../HAL/lcd/../../MCAL/dio/dio.h:
+
+../os/../HAL/lcd/LCD_Cfg.h:

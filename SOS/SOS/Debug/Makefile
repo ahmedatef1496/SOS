@@ -36,13 +36,16 @@ SUBDIRS :=  \
 ../HAL/ \
 ../HAL/button/ \
 ../HAL/lcd/ \
+../HAL/led \
 ../MCAL/ \
 ../MCAL/dio/ \
 ../MCAL/Interrupt/ \
 ../MCAL/timers/ \
 ../app \
-../os \
-../SERVIES/
+../SERVICE \
+../SERVICE/sos/ \
+../SERVIES/ \
+../UTILITIES
 
 
 # Add inputs and outputs from these tool invocations to the build variables 
@@ -50,13 +53,14 @@ C_SRCS +=  \
 ../app/app.c \
 ../HAL/button/button.c \
 ../HAL/lcd/lcd.c \
+../HAL/led/led.c \
 ../main.c \
 ../MCAL/dio/dio.c \
 ../MCAL/dio/dio_cfg.c \
 ../MCAL/Interrupt/exi.c \
 ../MCAL/Interrupt/interrupts.c \
 ../MCAL/timers/timer.c \
-../os/os.c
+../SERVICE/sos/sos.c
 
 
 PREPROCESSING_SRCS += 
@@ -69,49 +73,53 @@ OBJS +=  \
 app/app.o \
 HAL/button/button.o \
 HAL/lcd/lcd.o \
+HAL/led/led.o \
 main.o \
 MCAL/dio/dio.o \
 MCAL/dio/dio_cfg.o \
 MCAL/Interrupt/exi.o \
 MCAL/Interrupt/interrupts.o \
 MCAL/timers/timer.o \
-os/os.o
+SERVICE/sos/sos.o
 
 OBJS_AS_ARGS +=  \
 app/app.o \
 HAL/button/button.o \
 HAL/lcd/lcd.o \
+HAL/led/led.o \
 main.o \
 MCAL/dio/dio.o \
 MCAL/dio/dio_cfg.o \
 MCAL/Interrupt/exi.o \
 MCAL/Interrupt/interrupts.o \
 MCAL/timers/timer.o \
-os/os.o
+SERVICE/sos/sos.o
 
 C_DEPS +=  \
 app/app.d \
 HAL/button/button.d \
 HAL/lcd/lcd.d \
+HAL/led/led.d \
 main.d \
 MCAL/dio/dio.d \
 MCAL/dio/dio_cfg.d \
 MCAL/Interrupt/exi.d \
 MCAL/Interrupt/interrupts.d \
 MCAL/timers/timer.d \
-os/os.d
+SERVICE/sos/sos.d
 
 C_DEPS_AS_ARGS +=  \
 app/app.d \
 HAL/button/button.d \
 HAL/lcd/lcd.d \
+HAL/led/led.d \
 main.d \
 MCAL/dio/dio.d \
 MCAL/dio/dio_cfg.d \
 MCAL/Interrupt/exi.d \
 MCAL/Interrupt/interrupts.d \
 MCAL/timers/timer.d \
-os/os.d
+SERVICE/sos/sos.d
 
 OUTPUT_FILE_PATH +=SOS.elf
 
@@ -142,6 +150,13 @@ HAL/button/button.o: ../HAL/button/button.c
 	
 
 HAL/lcd/lcd.o: ../HAL/lcd/lcd.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : 5.4.0
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=atmega32 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
+HAL/led/led.o: ../HAL/led/led.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
 	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=atmega32 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
@@ -190,7 +205,7 @@ MCAL/timers/timer.o: ../MCAL/timers/timer.c
 	@echo Finished building: $<
 	
 
-os/os.o: ../os/os.c
+SERVICE/sos/sos.o: ../SERVICE/sos/sos.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
 	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=atmega32 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 

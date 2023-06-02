@@ -2,7 +2,7 @@
  * dio.h
  *
  * Created: 4/13/2023 6:41:52 AM
- *  Author: atef
+ *  Author: Amr
  */ 
 
 
@@ -10,9 +10,9 @@
 #define DIO_H_
 
 
-#include "../../SERVIES/memmap.h"
-#include "../../SERVIES/utils.h"
-#include "../../SERVIES/std_typs.h"
+#include "../../UTILITIES/memmap.h"
+#include "../../UTILITIES/utils.h"
+#include "../../UTILITIES/std_typs.h"
 
 
 typedef enum{

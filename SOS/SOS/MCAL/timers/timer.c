@@ -2,7 +2,7 @@
  * CFile1.c
  *
  * Created: 5/12/2023 3:36:31 PM
- *  Author: atef
+ *  Author: Amr
  */ 
 #include "timer.h"
 
@@ -87,11 +87,11 @@ void timer_reset()
 	TCNT0 = 0;
 
 }
-void timer0_stop()
+void timer_stop()
 {
 	TCCR0 &= 0x00;
-
 }
+
 /* Timer 0 Call Back functions*/
 
 void TIMER0_OV_SetCallBack(void(*LocalFptr)(void))

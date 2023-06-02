@@ -2,13 +2,14 @@
  * lcd.h
  *
  * Created: 4/19/2023 1:27:17 PM
- *  Author: atef
+ *  Author: Amr
  */ 
 
 
 #ifndef LCD_H_
 #define LCD_H_
 #include "../../MCAL/dio/dio.h"
+#include "LCD_Cfg.h"
 
  void LCD_Init(void);
 

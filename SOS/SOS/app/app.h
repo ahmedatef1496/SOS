@@ -2,7 +2,7 @@
  * app.h
  *
  * Created: 5/29/2023 2:14:05 PM
- *  Author: atef
+ *  Author: Amr
  */ 
 
 
@@ -10,11 +10,10 @@
 #define APP_H_
 
 
-#include "../HAL/lcd/lcd.h"   //for testing
-#include "../os/os.h"
-
+#include "../SERVICE/sos/sos.h"
 
 void app_init ();
-void Task3(void);
-void Task5(void);
+void app_start();
+
+
 #endif /* APP_H_ */
