@@ -41,7 +41,7 @@ void app_init()
 
 
 
-// 	sos_delete_task(2);																//delete task test
+// 	sos_delete_task(2);										//delete task test
 // 	sos_create_task(&str_task2_config);											
 
 // 	str_sos_config_task_t	str_task2_edit_config	= {2,2,20,Task2};				//modify task test
