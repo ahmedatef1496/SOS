@@ -9,7 +9,6 @@
 #ifndef SOS_H_
 #define SOS_H_
 
-#include "../../MCAL/dio/dio.h"
 #include "../../MCAL/timers/timer.h"
 #include "sos_cfg.h"
 #include "../../MCAL/Interrupt/exi.h"
